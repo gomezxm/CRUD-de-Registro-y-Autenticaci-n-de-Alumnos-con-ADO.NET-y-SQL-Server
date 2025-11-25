@@ -5,6 +5,7 @@ namespace CRUD
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -19,7 +20,7 @@ namespace CRUD
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

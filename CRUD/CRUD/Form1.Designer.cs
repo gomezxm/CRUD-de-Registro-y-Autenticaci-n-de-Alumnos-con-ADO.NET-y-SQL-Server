@@ -30,7 +30,6 @@
         {
             Lb_CreacionTitulo = new Label();
             Lb_ID = new Label();
-            Txb_ID = new TextBox();
             Txb_Nombre = new TextBox();
             Lb_Nombre = new Label();
             label1 = new Label();
@@ -54,7 +53,7 @@
             // 
             Lb_CreacionTitulo.AutoSize = true;
             Lb_CreacionTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_CreacionTitulo.Location = new Point(79, 9);
+            Lb_CreacionTitulo.Location = new Point(34, 23);
             Lb_CreacionTitulo.Name = "Lb_CreacionTitulo";
             Lb_CreacionTitulo.Size = new Size(369, 41);
             Lb_CreacionTitulo.TabIndex = 0;
@@ -67,21 +66,12 @@
             Lb_ID.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Lb_ID.Location = new Point(39, 64);
             Lb_ID.Name = "Lb_ID";
-            Lb_ID.Size = new Size(25, 20);
+            Lb_ID.Size = new Size(0, 20);
             Lb_ID.TabIndex = 1;
-            Lb_ID.Text = "ID";
-            // 
-            // Txb_ID
-            // 
-            Txb_ID.Location = new Point(39, 87);
-            Txb_ID.Name = "Txb_ID";
-            Txb_ID.Size = new Size(178, 27);
-            Txb_ID.TabIndex = 2;
-            Txb_ID.TextChanged += textBox1_TextChanged;
             // 
             // Txb_Nombre
             // 
-            Txb_Nombre.Location = new Point(39, 158);
+            Txb_Nombre.Location = new Point(34, 102);
             Txb_Nombre.Name = "Txb_Nombre";
             Txb_Nombre.Size = new Size(125, 27);
             Txb_Nombre.TabIndex = 3;
@@ -90,7 +80,7 @@
             // Lb_Nombre
             // 
             Lb_Nombre.AutoSize = true;
-            Lb_Nombre.Location = new Point(39, 135);
+            Lb_Nombre.Location = new Point(34, 79);
             Lb_Nombre.Name = "Lb_Nombre";
             Lb_Nombre.Size = new Size(64, 20);
             Lb_Nombre.TabIndex = 4;
@@ -99,7 +89,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(39, 270);
+            label1.Location = new Point(34, 214);
             label1.Name = "label1";
             label1.Size = new Size(57, 20);
             label1.TabIndex = 6;
@@ -107,7 +97,7 @@
             // 
             // Txb_Cedula
             // 
-            Txb_Cedula.Location = new Point(39, 355);
+            Txb_Cedula.Location = new Point(34, 299);
             Txb_Cedula.Name = "Txb_Cedula";
             Txb_Cedula.Size = new Size(125, 27);
             Txb_Cedula.TabIndex = 7;
@@ -116,7 +106,7 @@
             // Lb_Cedula
             // 
             Lb_Cedula.AutoSize = true;
-            Lb_Cedula.Location = new Point(39, 332);
+            Lb_Cedula.Location = new Point(34, 276);
             Lb_Cedula.Name = "Lb_Cedula";
             Lb_Cedula.Size = new Size(55, 20);
             Lb_Cedula.TabIndex = 8;
@@ -125,7 +115,7 @@
             // Lb_Semestre
             // 
             Lb_Semestre.AutoSize = true;
-            Lb_Semestre.Location = new Point(330, 64);
+            Lb_Semestre.Location = new Point(228, 81);
             Lb_Semestre.Name = "Lb_Semestre";
             Lb_Semestre.Size = new Size(70, 20);
             Lb_Semestre.TabIndex = 10;
@@ -134,7 +124,7 @@
             // Jornada
             // 
             Jornada.AutoSize = true;
-            Jornada.Location = new Point(399, 135);
+            Jornada.Location = new Point(297, 152);
             Jornada.Name = "Jornada";
             Jornada.Size = new Size(0, 20);
             Jornada.TabIndex = 12;
@@ -143,7 +133,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Licenciatura en Desarrollo y Gestion en Software", "Ingenieria industrial", "Licenciatura en Topografia" });
-            comboBox1.Location = new Point(39, 293);
+            comboBox1.Location = new Point(34, 237);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 13;
@@ -176,7 +166,7 @@
             // 
             Cb_Semestre.FormattingEnabled = true;
             Cb_Semestre.Items.AddRange(new object[] { "1° ", "2°", "3°", "4°", "5°", "6°", "7°", "8°", "9°", "10°" });
-            Cb_Semestre.Location = new Point(330, 87);
+            Cb_Semestre.Location = new Point(228, 104);
             Cb_Semestre.Name = "Cb_Semestre";
             Cb_Semestre.Size = new Size(151, 28);
             Cb_Semestre.TabIndex = 16;
@@ -185,7 +175,7 @@
             // 
             groupBox1.Controls.Add(Rb_Matutina);
             groupBox1.Controls.Add(Rb_Vespertina);
-            groupBox1.Location = new Point(330, 135);
+            groupBox1.Location = new Point(228, 152);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(118, 125);
             groupBox1.TabIndex = 17;
@@ -195,7 +185,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(39, 221);
+            textBox2.Location = new Point(34, 165);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 18;
@@ -203,7 +193,7 @@
             // Lb_Contraseña
             // 
             Lb_Contraseña.AutoSize = true;
-            Lb_Contraseña.Location = new Point(39, 200);
+            Lb_Contraseña.Location = new Point(34, 144);
             Lb_Contraseña.Name = "Lb_Contraseña";
             Lb_Contraseña.Size = new Size(83, 20);
             Lb_Contraseña.TabIndex = 19;
@@ -211,7 +201,7 @@
             // 
             // Bt_Registrar
             // 
-            Bt_Registrar.Location = new Point(330, 270);
+            Bt_Registrar.Location = new Point(228, 287);
             Bt_Registrar.Name = "Bt_Registrar";
             Bt_Registrar.Size = new Size(151, 29);
             Bt_Registrar.TabIndex = 20;
@@ -221,7 +211,7 @@
             // 
             // Bt_Cancelar
             // 
-            Bt_Cancelar.Location = new Point(330, 305);
+            Bt_Cancelar.Location = new Point(228, 322);
             Bt_Cancelar.Name = "Bt_Cancelar";
             Bt_Cancelar.Size = new Size(151, 29);
             Bt_Cancelar.TabIndex = 38;
@@ -233,7 +223,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(521, 450);
+            ClientSize = new Size(426, 450);
             Controls.Add(Bt_Cancelar);
             Controls.Add(Bt_Registrar);
             Controls.Add(Lb_Contraseña);
@@ -248,7 +238,6 @@
             Controls.Add(label1);
             Controls.Add(Lb_Nombre);
             Controls.Add(Txb_Nombre);
-            Controls.Add(Txb_ID);
             Controls.Add(Lb_ID);
             Controls.Add(Lb_CreacionTitulo);
             Name = "Form1";
@@ -264,7 +253,6 @@
 
         private Label Lb_CreacionTitulo;
         private Label Lb_ID;
-        private TextBox Txb_ID;
         private TextBox Txb_Nombre;
         private Label Lb_Nombre;
         private Label label1;

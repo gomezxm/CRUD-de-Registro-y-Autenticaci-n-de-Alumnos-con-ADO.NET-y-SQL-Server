@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerad\\OneDrive\\Escritorio\\ProtecVS\\CRUD\\CRUD\\CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\CRUD.csproj",
       "projectName": "CRUD",
-      "projectPath": "C:\\Users\\gerad\\OneDrive\\Escritorio\\ProtecVS\\CRUD\\CRUD\\CRUD.csproj",
+      "projectPath": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\CRUD.csproj",
       "packagesPath": "C:\\Users\\gerad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerad\\OneDrive\\Escritorio\\ProtecVS\\CRUD\\CRUD\\obj\\",
+      "outputPath": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

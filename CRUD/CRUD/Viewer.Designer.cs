@@ -28,13 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            Lb_Contraseña = new Label();
-            textBox2 = new TextBox();
+            Lsb_Alumnos = new ListBox();
             Jornada = new Label();
-            Lb_Semestre = new Label();
-            Lb_Cedula = new Label();
-            Txb_Cedula = new TextBox();
             label1 = new Label();
             Lb_Nombre = new Label();
             Txb_Nombre = new TextBox();
@@ -47,113 +42,75 @@
             actualizarDatosToolStripMenuItem = new ToolStripMenuItem();
             eliminarToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            opcionesToolStripMenuItem = new ToolStripMenuItem();
+            conectaToolStripMenuItem = new ToolStripMenuItem();
+            Txb_carrera = new TextBox();
+            txb_jornada = new TextBox();
             Lb_Jornada = new Label();
+            label2 = new Label();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // listBox1
+            // Lsb_Alumnos
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Items.AddRange(new object[] { "1- Gerardo Tejada - Desarrollo en Software - Matutina" });
-            listBox1.Location = new Point(473, 49);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(428, 324);
-            listBox1.TabIndex = 0;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged_1;
-            // 
-            // Lb_Contraseña
-            // 
-            Lb_Contraseña.AutoSize = true;
-            Lb_Contraseña.Location = new Point(39, 218);
-            Lb_Contraseña.Name = "Lb_Contraseña";
-            Lb_Contraseña.Size = new Size(83, 20);
-            Lb_Contraseña.TabIndex = 34;
-            Lb_Contraseña.Text = "Contraseña";
-            // 
-            // textBox2
-            // 
-            textBox2.Enabled = false;
-            textBox2.Location = new Point(39, 239);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 33;
+            Lsb_Alumnos.FormattingEnabled = true;
+            Lsb_Alumnos.Items.AddRange(new object[] { "ID — Nombre — Carrera — Jornada", "01 - Gerardo Tejada - Desarrollo de software - Matutina" });
+            Lsb_Alumnos.Location = new Point(12, 308);
+            Lsb_Alumnos.Name = "Lsb_Alumnos";
+            Lsb_Alumnos.Size = new Size(516, 144);
+            Lsb_Alumnos.TabIndex = 0;
+            Lsb_Alumnos.SelectedIndexChanged += listBox1_SelectedIndexChanged_1;
             // 
             // Jornada
             // 
             Jornada.AutoSize = true;
-            Jornada.Location = new Point(357, 153);
+            Jornada.Location = new Point(113, 164);
             Jornada.Name = "Jornada";
             Jornada.Size = new Size(0, 20);
             Jornada.TabIndex = 29;
             // 
-            // Lb_Semestre
-            // 
-            Lb_Semestre.AutoSize = true;
-            Lb_Semestre.Location = new Point(246, 82);
-            Lb_Semestre.Name = "Lb_Semestre";
-            Lb_Semestre.Size = new Size(70, 20);
-            Lb_Semestre.TabIndex = 28;
-            Lb_Semestre.Text = "Semestre";
-            // 
-            // Lb_Cedula
-            // 
-            Lb_Cedula.AutoSize = true;
-            Lb_Cedula.Location = new Point(39, 288);
-            Lb_Cedula.Name = "Lb_Cedula";
-            Lb_Cedula.Size = new Size(55, 20);
-            Lb_Cedula.TabIndex = 27;
-            Lb_Cedula.Text = "Cédula";
-            // 
-            // Txb_Cedula
-            // 
-            Txb_Cedula.Enabled = false;
-            Txb_Cedula.Location = new Point(39, 311);
-            Txb_Cedula.Name = "Txb_Cedula";
-            Txb_Cedula.Size = new Size(125, 27);
-            Txb_Cedula.TabIndex = 26;
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(253, 216);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(65, 176);
             label1.Name = "label1";
-            label1.Size = new Size(57, 20);
+            label1.Size = new Size(78, 20);
             label1.TabIndex = 25;
-            label1.Text = "Carrera";
+            label1.Text = "CARRERA";
             // 
             // Lb_Nombre
             // 
             Lb_Nombre.AutoSize = true;
-            Lb_Nombre.Location = new Point(39, 153);
+            Lb_Nombre.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Lb_Nombre.Location = new Point(287, 102);
             Lb_Nombre.Name = "Lb_Nombre";
-            Lb_Nombre.Size = new Size(64, 20);
+            Lb_Nombre.Size = new Size(74, 20);
             Lb_Nombre.TabIndex = 24;
-            Lb_Nombre.Text = "Nombre";
+            Lb_Nombre.Text = "NOMBRE";
             // 
             // Txb_Nombre
             // 
             Txb_Nombre.Enabled = false;
-            Txb_Nombre.Location = new Point(39, 176);
+            Txb_Nombre.Location = new Point(287, 125);
             Txb_Nombre.Name = "Txb_Nombre";
-            Txb_Nombre.Size = new Size(125, 27);
+            Txb_Nombre.Size = new Size(191, 27);
             Txb_Nombre.TabIndex = 23;
+            Txb_Nombre.TextChanged += Txb_Nombre_TextChanged;
             // 
             // Txb_ID
             // 
             Txb_ID.Enabled = false;
-            Txb_ID.Location = new Point(39, 105);
+            Txb_ID.Location = new Point(64, 125);
             Txb_ID.Name = "Txb_ID";
-            Txb_ID.Size = new Size(125, 27);
+            Txb_ID.Size = new Size(192, 27);
             Txb_ID.TabIndex = 22;
             // 
             // Lb_ID
             // 
             Lb_ID.AutoSize = true;
             Lb_ID.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_ID.Location = new Point(39, 82);
+            Lb_ID.Location = new Point(64, 102);
             Lb_ID.Name = "Lb_ID";
             Lb_ID.Size = new Size(25, 20);
             Lb_ID.TabIndex = 21;
@@ -163,20 +120,20 @@
             // 
             Lb_Titulo.AutoSize = true;
             Lb_Titulo.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_Titulo.Location = new Point(113, 32);
+            Lb_Titulo.Location = new Point(82, 46);
             Lb_Titulo.Name = "Lb_Titulo";
-            Lb_Titulo.Size = new Size(287, 38);
+            Lb_Titulo.Size = new Size(330, 38);
             Lb_Titulo.TabIndex = 37;
-            Lb_Titulo.Text = "Datos del estudiante";
+            Lb_Titulo.Text = "DATOS DE ESTUDIANTE";
             Lb_Titulo.Click += Lb_Titulo_Click;
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { crearToolStripMenuItem, cargarDatosToolStripMenuItem, actualizarDatosToolStripMenuItem, eliminarToolStripMenuItem, salirToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { crearToolStripMenuItem, cargarDatosToolStripMenuItem, actualizarDatosToolStripMenuItem, eliminarToolStripMenuItem, salirToolStripMenuItem, opcionesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(924, 28);
+            menuStrip1.Size = new Size(540, 28);
             menuStrip1.TabIndex = 38;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -215,61 +172,74 @@
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
-            // textBox1
+            // opcionesToolStripMenuItem
             // 
-            textBox1.Enabled = false;
-            textBox1.Location = new Point(246, 105);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 39;
+            opcionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { conectaToolStripMenuItem });
+            opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
+            opcionesToolStripMenuItem.Size = new Size(85, 24);
+            opcionesToolStripMenuItem.Text = "Opciones";
             // 
-            // textBox3
+            // conectaToolStripMenuItem
             // 
-            textBox3.Enabled = false;
-            textBox3.Location = new Point(246, 239);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 40;
+            conectaToolStripMenuItem.Name = "conectaToolStripMenuItem";
+            conectaToolStripMenuItem.Size = new Size(146, 26);
+            conectaToolStripMenuItem.Text = "Conecta";
+            conectaToolStripMenuItem.Click += conectaToolStripMenuItem_Click;
             // 
-            // textBox4
+            // Txb_carrera
             // 
-            textBox4.Enabled = false;
-            textBox4.Location = new Point(246, 176);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 41;
+            Txb_carrera.Enabled = false;
+            Txb_carrera.Location = new Point(65, 199);
+            Txb_carrera.Name = "Txb_carrera";
+            Txb_carrera.Size = new Size(191, 27);
+            Txb_carrera.TabIndex = 40;
+            // 
+            // txb_jornada
+            // 
+            txb_jornada.Enabled = false;
+            txb_jornada.Location = new Point(287, 199);
+            txb_jornada.Name = "txb_jornada";
+            txb_jornada.Size = new Size(191, 27);
+            txb_jornada.TabIndex = 41;
+            txb_jornada.TextChanged += textBox4_TextChanged;
             // 
             // Lb_Jornada
             // 
             Lb_Jornada.AutoSize = true;
-            Lb_Jornada.Location = new Point(246, 154);
+            Lb_Jornada.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Lb_Jornada.Location = new Point(287, 176);
             Lb_Jornada.Name = "Lb_Jornada";
-            Lb_Jornada.Size = new Size(61, 20);
+            Lb_Jornada.Size = new Size(82, 20);
             Lb_Jornada.TabIndex = 42;
-            Lb_Jornada.Text = "Jornada";
+            Lb_Jornada.Text = "JORNADA";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 271);
+            label2.Name = "label2";
+            label2.Size = new Size(76, 20);
+            label2.TabIndex = 43;
+            label2.Text = "ALUMNO";
             // 
             // Viewer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(924, 397);
+            ClientSize = new Size(540, 466);
+            Controls.Add(label2);
             Controls.Add(Lb_Jornada);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
+            Controls.Add(txb_jornada);
+            Controls.Add(Txb_carrera);
             Controls.Add(Lb_Titulo);
-            Controls.Add(Lb_Contraseña);
-            Controls.Add(textBox2);
             Controls.Add(Jornada);
-            Controls.Add(Lb_Semestre);
-            Controls.Add(Lb_Cedula);
-            Controls.Add(Txb_Cedula);
             Controls.Add(label1);
             Controls.Add(Lb_Nombre);
             Controls.Add(Txb_Nombre);
             Controls.Add(Txb_ID);
             Controls.Add(Lb_ID);
-            Controls.Add(listBox1);
+            Controls.Add(Lsb_Alumnos);
             Controls.Add(menuStrip1);
             Name = "Viewer";
             Text = "Viewer";
@@ -285,13 +255,8 @@
         private DataGridView TablapRUEBA;
         private DataGridViewTextBoxColumn Prueba;
         private DataGridViewTextBoxColumn Column1;
-        private ListBox listBox1;
-        private Label Lb_Contraseña;
-        private TextBox textBox2;
+        private ListBox Lsb_Alumnos;
         private Label Jornada;
-        private Label Lb_Semestre;
-        private Label Lb_Cedula;
-        private TextBox Txb_Cedula;
         private Label label1;
         private Label Lb_Nombre;
         private TextBox Txb_Nombre;
@@ -299,14 +264,16 @@
         private Label Lb_ID;
         private Label Lb_Titulo;
         private MenuStrip menuStrip1;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox Txb_carrera;
+        private TextBox txb_jornada;
         private Label Lb_Jornada;
         private ToolStripMenuItem crearToolStripMenuItem;
         private ToolStripMenuItem cargarDatosToolStripMenuItem;
         private ToolStripMenuItem actualizarDatosToolStripMenuItem;
         private ToolStripMenuItem eliminarToolStripMenuItem;
         private ToolStripMenuItem salirToolStripMenuItem;
+        private ToolStripMenuItem opcionesToolStripMenuItem;
+        private ToolStripMenuItem conectaToolStripMenuItem;
+        private Label label2;
     }
 }
