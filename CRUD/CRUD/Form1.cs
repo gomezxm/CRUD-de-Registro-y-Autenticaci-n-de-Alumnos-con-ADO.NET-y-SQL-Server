@@ -38,7 +38,7 @@
                 if (char.IsDigit(c) || c == '-')
                     soloNumerosYGuion += c;
             }
-
+            //
             // 2. Aplicar automáticamente el formato deseado mientras el usuario escribe
             string formateado = "";
             string numeros = soloNumerosYGuion.Replace("-", ""); // solo dígitos puros
