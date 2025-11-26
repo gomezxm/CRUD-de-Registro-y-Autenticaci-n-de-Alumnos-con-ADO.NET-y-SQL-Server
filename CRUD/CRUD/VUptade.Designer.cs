@@ -51,9 +51,10 @@
             // 
             // Bt_Actualizar
             // 
-            Bt_Actualizar.Location = new Point(227, 307);
+            Bt_Actualizar.Location = new Point(199, 230);
+            Bt_Actualizar.Margin = new Padding(3, 2, 3, 2);
             Bt_Actualizar.Name = "Bt_Actualizar";
-            Bt_Actualizar.Size = new Size(151, 29);
+            Bt_Actualizar.Size = new Size(132, 22);
             Bt_Actualizar.TabIndex = 36;
             Bt_Actualizar.Text = "Actualizar";
             Bt_Actualizar.UseVisualStyleBackColor = true;
@@ -62,26 +63,30 @@
             // Lb_Contraseña
             // 
             Lb_Contraseña.AutoSize = true;
-            Lb_Contraseña.Location = new Point(63, 165);
+            Lb_Contraseña.Location = new Point(55, 124);
             Lb_Contraseña.Name = "Lb_Contraseña";
-            Lb_Contraseña.Size = new Size(83, 20);
+            Lb_Contraseña.Size = new Size(67, 15);
             Lb_Contraseña.TabIndex = 35;
             Lb_Contraseña.Text = "Contraseña";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(63, 186);
+            textBox2.Location = new Point(55, 140);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
+            textBox2.Size = new Size(110, 23);
             textBox2.TabIndex = 34;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(Rb_Matutina);
             groupBox1.Controls.Add(Rb_Vespertina);
-            groupBox1.Location = new Point(227, 172);
+            groupBox1.Location = new Point(199, 129);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(118, 125);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(103, 94);
             groupBox1.TabIndex = 33;
             groupBox1.TabStop = false;
             groupBox1.Text = "Jornada";
@@ -89,9 +94,10 @@
             // Rb_Matutina
             // 
             Rb_Matutina.AutoSize = true;
-            Rb_Matutina.Location = new Point(10, 31);
+            Rb_Matutina.Location = new Point(9, 23);
+            Rb_Matutina.Margin = new Padding(3, 2, 3, 2);
             Rb_Matutina.Name = "Rb_Matutina";
-            Rb_Matutina.Size = new Size(89, 24);
+            Rb_Matutina.Size = new Size(73, 19);
             Rb_Matutina.TabIndex = 14;
             Rb_Matutina.TabStop = true;
             Rb_Matutina.Text = "Matutina";
@@ -100,9 +106,10 @@
             // Rb_Vespertina
             // 
             Rb_Vespertina.AutoSize = true;
-            Rb_Vespertina.Location = new Point(10, 61);
+            Rb_Vespertina.Location = new Point(9, 46);
+            Rb_Vespertina.Margin = new Padding(3, 2, 3, 2);
             Rb_Vespertina.Name = "Rb_Vespertina";
-            Rb_Vespertina.Size = new Size(99, 24);
+            Rb_Vespertina.Size = new Size(79, 19);
             Rb_Vespertina.TabIndex = 15;
             Rb_Vespertina.TabStop = true;
             Rb_Vespertina.Text = "Vespertina";
@@ -112,103 +119,112 @@
             // 
             Cb_Semestre.FormattingEnabled = true;
             Cb_Semestre.Items.AddRange(new object[] { "1° ", "2°", "3°", "4°", "5°", "6°", "7°", "8°", "9°", "10°" });
-            Cb_Semestre.Location = new Point(227, 124);
+            Cb_Semestre.Location = new Point(199, 93);
+            Cb_Semestre.Margin = new Padding(3, 2, 3, 2);
             Cb_Semestre.Name = "Cb_Semestre";
-            Cb_Semestre.Size = new Size(151, 28);
+            Cb_Semestre.Size = new Size(133, 23);
             Cb_Semestre.TabIndex = 32;
+            Cb_Semestre.SelectedIndexChanged += Cb_Semestre_SelectedIndexChanged;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Licenciatura en Desarrollo y Gestion en Software", "Ingenieria industrial", "Licenciatura en Topografia" });
-            comboBox1.Location = new Point(63, 258);
+            comboBox1.Location = new Point(55, 194);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(133, 23);
             comboBox1.TabIndex = 31;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Jornada
             // 
             Jornada.AutoSize = true;
-            Jornada.Location = new Point(296, 172);
+            Jornada.Location = new Point(259, 129);
             Jornada.Name = "Jornada";
-            Jornada.Size = new Size(0, 20);
+            Jornada.Size = new Size(0, 15);
             Jornada.TabIndex = 30;
             // 
             // Lb_Semestre
             // 
             Lb_Semestre.AutoSize = true;
-            Lb_Semestre.Location = new Point(227, 101);
+            Lb_Semestre.Location = new Point(199, 76);
             Lb_Semestre.Name = "Lb_Semestre";
-            Lb_Semestre.Size = new Size(70, 20);
+            Lb_Semestre.Size = new Size(55, 15);
             Lb_Semestre.TabIndex = 29;
             Lb_Semestre.Text = "Semestre";
             // 
             // Lb_Cedula
             // 
             Lb_Cedula.AutoSize = true;
-            Lb_Cedula.Location = new Point(63, 297);
+            Lb_Cedula.Location = new Point(55, 223);
             Lb_Cedula.Name = "Lb_Cedula";
-            Lb_Cedula.Size = new Size(55, 20);
+            Lb_Cedula.Size = new Size(44, 15);
             Lb_Cedula.TabIndex = 28;
             Lb_Cedula.Text = "Cédula";
             // 
             // Txb_Cedula
             // 
-            Txb_Cedula.Location = new Point(63, 320);
+            Txb_Cedula.Location = new Point(55, 240);
+            Txb_Cedula.Margin = new Padding(3, 2, 3, 2);
             Txb_Cedula.Name = "Txb_Cedula";
-            Txb_Cedula.Size = new Size(125, 27);
+            Txb_Cedula.Size = new Size(110, 23);
             Txb_Cedula.TabIndex = 27;
+            Txb_Cedula.TextChanged += Txb_Cedula_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(63, 235);
+            label1.Location = new Point(55, 176);
             label1.Name = "label1";
-            label1.Size = new Size(57, 20);
+            label1.Size = new Size(45, 15);
             label1.TabIndex = 26;
             label1.Text = "Carrera";
             // 
             // Lb_Nombre
             // 
             Lb_Nombre.AutoSize = true;
-            Lb_Nombre.Location = new Point(63, 100);
+            Lb_Nombre.Location = new Point(55, 75);
             Lb_Nombre.Name = "Lb_Nombre";
-            Lb_Nombre.Size = new Size(64, 20);
+            Lb_Nombre.Size = new Size(51, 15);
             Lb_Nombre.TabIndex = 25;
             Lb_Nombre.Text = "Nombre";
             // 
             // Txb_Nombre
             // 
-            Txb_Nombre.Location = new Point(63, 123);
+            Txb_Nombre.Location = new Point(55, 92);
+            Txb_Nombre.Margin = new Padding(3, 2, 3, 2);
             Txb_Nombre.Name = "Txb_Nombre";
-            Txb_Nombre.Size = new Size(125, 27);
+            Txb_Nombre.Size = new Size(110, 23);
             Txb_Nombre.TabIndex = 24;
+            Txb_Nombre.TextChanged += Txb_Nombre_TextChanged;
             // 
             // Lb_ID
             // 
             Lb_ID.AutoSize = true;
             Lb_ID.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_ID.Location = new Point(67, 92);
+            Lb_ID.Location = new Point(59, 69);
             Lb_ID.Name = "Lb_ID";
-            Lb_ID.Size = new Size(0, 20);
+            Lb_ID.Size = new Size(0, 15);
             Lb_ID.TabIndex = 22;
             // 
             // Lb_CreacionTitulo
             // 
             Lb_CreacionTitulo.AutoSize = true;
             Lb_CreacionTitulo.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_CreacionTitulo.Location = new Point(67, 22);
+            Lb_CreacionTitulo.Location = new Point(59, 16);
             Lb_CreacionTitulo.Name = "Lb_CreacionTitulo";
-            Lb_CreacionTitulo.Size = new Size(291, 41);
+            Lb_CreacionTitulo.Size = new Size(232, 32);
             Lb_CreacionTitulo.TabIndex = 21;
             Lb_CreacionTitulo.Text = "ACTUALIZAR DATO";
             Lb_CreacionTitulo.Click += Lb_CreacionTitulo_Click;
             // 
             // Bt_Cancelar
             // 
-            Bt_Cancelar.Location = new Point(227, 342);
+            Bt_Cancelar.Location = new Point(199, 256);
+            Bt_Cancelar.Margin = new Padding(3, 2, 3, 2);
             Bt_Cancelar.Name = "Bt_Cancelar";
-            Bt_Cancelar.Size = new Size(151, 29);
+            Bt_Cancelar.Size = new Size(132, 22);
             Bt_Cancelar.TabIndex = 37;
             Bt_Cancelar.Text = "Cancelar";
             Bt_Cancelar.UseVisualStyleBackColor = true;
@@ -216,9 +232,9 @@
             // 
             // VUptade
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(427, 450);
+            ClientSize = new Size(374, 338);
             Controls.Add(Bt_Cancelar);
             Controls.Add(Bt_Actualizar);
             Controls.Add(Lb_Contraseña);
@@ -235,6 +251,7 @@
             Controls.Add(Txb_Nombre);
             Controls.Add(Lb_ID);
             Controls.Add(Lb_CreacionTitulo);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "VUptade";
             Text = "VUptade";
             Load += VUptade_Load;

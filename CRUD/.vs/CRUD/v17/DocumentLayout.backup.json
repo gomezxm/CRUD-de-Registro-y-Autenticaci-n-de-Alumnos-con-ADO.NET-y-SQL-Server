@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\gerad\\onedrive\\escritorio\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\daniel ubarte\\source\\repos\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\gerad\\onedrive\\escritorio\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\daniel ubarte\\source\\repos\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\gerad\\onedrive\\escritorio\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\daniel ubarte\\source\\repos\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\gerad\\onedrive\\escritorio\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\vuptade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\vuptade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\daniel ubarte\\source\\repos\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\vuptade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\vuptade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\gerad\\onedrive\\escritorio\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\daniel ubarte\\source\\repos\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\gerad\\onedrive\\escritorio\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\gerad\\onedrive\\escritorio\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|c:\\users\\daniel ubarte\\source\\repos\\crud\\crud-de-registro-y-autenticaci-n-de-alumnos-con-ado.net-y-sql-server\\crud\\crud\\viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{77A9093A-FBD3-4501-A65D-D0E5206EBD4A}|CRUD\\CRUD.csproj|solutionrelative:crud\\viewer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,119 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs",
-              "RelativeDocumentMoniker": "CRUD\\Form1.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs",
-              "RelativeToolTip": "CRUD\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T15:33:17.098Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Login.cs",
-              "RelativeDocumentMoniker": "CRUD\\Login.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Login.cs",
-              "RelativeToolTip": "CRUD\\Login.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T16:24:27.076Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Login.cs",
-              "RelativeDocumentMoniker": "CRUD\\Login.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Login.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CRUD\\Login.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T20:12:45.179Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VUptade.cs",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\VUptade.cs",
-              "RelativeDocumentMoniker": "CRUD\\VUptade.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\VUptade.cs",
-              "RelativeToolTip": "CRUD\\VUptade.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T15:31:03.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Viewer.cs",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Viewer.cs",
-              "RelativeDocumentMoniker": "CRUD\\Viewer.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Viewer.cs",
-              "RelativeToolTip": "CRUD\\Viewer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T20:02:29.512Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Program.cs",
-              "RelativeDocumentMoniker": "CRUD\\Program.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Program.cs",
-              "RelativeToolTip": "CRUD\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T18:46:17.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs",
               "RelativeDocumentMoniker": "CRUD\\Form1.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "CRUD\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T15:25:20.294Z",
+              "WhenOpened": "2025-11-26T02:33:01.182Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs",
+              "RelativeDocumentMoniker": "CRUD\\Form1.cs",
+              "ToolTip": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.cs",
+              "RelativeToolTip": "CRUD\\Form1.cs",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAAgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T02:22:02.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "CRUD\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Form1.Designer.cs",
+              "RelativeToolTip": "CRUD\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T02:21:48.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Login.cs",
+              "RelativeDocumentMoniker": "CRUD\\Login.cs",
+              "ToolTip": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CRUD\\Login.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T02:15:52.832Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VUptade.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\VUptade.cs",
+              "RelativeDocumentMoniker": "CRUD\\VUptade.cs",
+              "ToolTip": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\VUptade.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CRUD\\VUptade.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T02:15:55.708Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Viewer.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Viewer.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Viewer.cs",
               "RelativeDocumentMoniker": "CRUD\\Viewer.cs",
-              "ToolTip": "C:\\Users\\gerad\\OneDrive\\Escritorio\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Viewer.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Daniel Ubarte\\source\\repos\\CRUD\\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\\CRUD\\CRUD\\Viewer.cs [Dise\u00F1o]",
               "RelativeToolTip": "CRUD\\Viewer.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T15:36:16.13Z",
+              "WhenOpened": "2025-11-26T02:15:54.63Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

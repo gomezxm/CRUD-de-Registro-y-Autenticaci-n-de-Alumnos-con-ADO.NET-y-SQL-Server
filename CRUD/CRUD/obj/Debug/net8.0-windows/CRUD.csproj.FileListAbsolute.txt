@@ -36,3 +36,23 @@ C:\Users\gerad\OneDrive\Escritorio\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alum
 C:\Users\gerad\OneDrive\Escritorio\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.genruntimeconfig.cache
 C:\Users\gerad\OneDrive\Escritorio\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\ref\CRUD.dll
 C:\Users\gerad\OneDrive\Escritorio\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Login.resources
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.exe
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.deps.json
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.runtimeconfig.json
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.dll
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\bin\Debug\net8.0-windows\CRUD.pdb
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Form1.resources
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Login.resources
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.Viewer.resources
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.VUptade.resources
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.csproj.GenerateResource.cache
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.AssemblyInfoInputs.cache
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.AssemblyInfo.cs
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.sourcelink.json
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.dll
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\refint\CRUD.dll
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.pdb
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\CRUD.genruntimeconfig.cache
+C:\Users\Daniel Ubarte\source\repos\CRUD\CRUD-de-Registro-y-Autenticaci-n-de-Alumnos-con-ADO.NET-y-SQL-Server\CRUD\CRUD\obj\Debug\net8.0-windows\ref\CRUD.dll
