@@ -18,6 +18,38 @@ namespace CRUD
             InitializeComponent();
             Lsb_Alumnos.SelectionMode = SelectionMode.One;
             this.StartPosition = FormStartPosition.CenterScreen;
+            // Necesario para que el formulario reciba las teclas aunque otros controles tengan el foco
+            this.KeyPreview = true;
+            // Suscribimos el evento KeyDown
+            this.KeyDown += new KeyEventHandler(FormPrincipal_KeyDown);
+            // Ctrl + E para "Actualizar Datos"
+            actualizarDatosToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.E;
+
+            // Opcional: que se vea el atajo en el menú (Ctrl+E)
+            actualizarDatosToolStripMenuItem.ShowShortcutKeys = true;
+
+            // Ctrl + D para "Eliminar"
+            this.KeyPreview = true;                    // ← IMPORTANTE
+            this.KeyDown += new KeyEventHandler(FormPrincipal_KeyDown);
+        }
+
+        private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.D)
+            {
+                eliminarToolStripMenuItem.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true; // evita el sonido "beep"
+                return; // salimos para no seguir evaluando
+            }
+
+            // ESC → Crear nuevo
+            if (e.KeyCode == Keys.Escape)
+            {
+                crearToolStripMenuItem.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -54,13 +86,13 @@ namespace CRUD
         {
             Form1 VCrear = new Form1();
             VCrear.ShowDialog();
+
         }
 
         private void actualizarDatosToolStripMenuItem_Click(object sender, EventArgs e) // VENTANA PARA ACTUALIZAR REGISTROS
         {
             VUptade VActualizar = new VUptade();
             VActualizar.ShowDialog();
-
         }
 
         private void cargarDatosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,6 +115,7 @@ namespace CRUD
                 MessageBox.Show("Registro eliminado", "Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); // ESTE MENSAJE SE DEBE MOSTRAR DESPUES DE ELIMINAR EL REGISTRO
             }
         }
+
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Dispose(); // AQUI SE CIERRA EL PROGRAMA

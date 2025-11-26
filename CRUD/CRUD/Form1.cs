@@ -5,9 +5,28 @@
         public Form1()
         {
             InitializeComponent();
+            // Asigna ESC como atajo para el menú "Crear"
             this.StartPosition = FormStartPosition.CenterScreen;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             Cb_Semestre.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.KeyPreview = true;
+
+            // Suscribimos el evento KeyDown
+            this.KeyDown += new KeyEventHandler(Form1_KeyDown);
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Ctrl + S → Guardar / Registrar
+            if (e.Control && e.KeyCode == Keys.S)
+            {
+                // Ejecuta exactamente el mismo código que al hacer clic en el botón
+                Bt_Registrar.PerformClick();
+
+                // Evita que se escriba la "S" en el control que tenga el foco y el "beep"
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

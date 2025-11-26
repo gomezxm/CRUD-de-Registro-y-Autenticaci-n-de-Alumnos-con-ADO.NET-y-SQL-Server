@@ -16,6 +16,24 @@ namespace CRUD
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.KeyPreview = true;
+
+            // Suscribimos el evento KeyDown
+            this.KeyDown += new KeyEventHandler(Form1_KeyDown);
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Ctrl + S → Guardar / Registrar
+            if (e.Control && e.KeyCode == Keys.S)
+            {
+                // Ejecuta exactamente el mismo código que al hacer clic en el botón
+                button1.PerformClick();
+
+                // Evita que se escriba la "S" en el control que tenga el foco y el "beep"
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
 
         private void Lb_CreacionTitulo_Click(object sender, EventArgs e)
