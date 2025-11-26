@@ -58,7 +58,7 @@
             Bt_Actualizar.TabIndex = 36;
             Bt_Actualizar.Text = "Actualizar";
             Bt_Actualizar.UseVisualStyleBackColor = true;
-            Bt_Actualizar.Click += Bt_Registrar_Click;
+            Bt_Actualizar.Click += Bt_Actualizar_Click;
             // 
             // Lb_Contraseña
             // 
@@ -76,7 +76,6 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(110, 23);
             textBox2.TabIndex = 34;
-            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // groupBox1
             // 
@@ -124,7 +123,6 @@
             Cb_Semestre.Name = "Cb_Semestre";
             Cb_Semestre.Size = new Size(133, 23);
             Cb_Semestre.TabIndex = 32;
-            Cb_Semestre.SelectedIndexChanged += Cb_Semestre_SelectedIndexChanged;
             // 
             // comboBox1
             // 
@@ -135,7 +133,6 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(133, 23);
             comboBox1.TabIndex = 31;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Jornada
             // 
@@ -170,7 +167,6 @@
             Txb_Cedula.Name = "Txb_Cedula";
             Txb_Cedula.Size = new Size(110, 23);
             Txb_Cedula.TabIndex = 27;
-            Txb_Cedula.TextChanged += Txb_Cedula_TextChanged;
             // 
             // label1
             // 
@@ -197,7 +193,6 @@
             Txb_Nombre.Name = "Txb_Nombre";
             Txb_Nombre.Size = new Size(110, 23);
             Txb_Nombre.TabIndex = 24;
-            Txb_Nombre.TextChanged += Txb_Nombre_TextChanged;
             // 
             // Lb_ID
             // 
@@ -217,7 +212,6 @@
             Lb_CreacionTitulo.Size = new Size(232, 32);
             Lb_CreacionTitulo.TabIndex = 21;
             Lb_CreacionTitulo.Text = "ACTUALIZAR DATO";
-            Lb_CreacionTitulo.Click += Lb_CreacionTitulo_Click;
             // 
             // Bt_Cancelar
             // 

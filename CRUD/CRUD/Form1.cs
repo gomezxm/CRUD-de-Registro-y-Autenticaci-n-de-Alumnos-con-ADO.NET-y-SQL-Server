@@ -180,6 +180,28 @@
                 return;
             }
 
+            string jornada = Rb_Matutina.Checked ? "Matutina" : "Vespertina";
+
+            var repo = new EstudianteRepository();
+            bool exito = repo.Insertar(
+                Txb_Nombre.Text.Trim(),
+                Txb_Cedula.Text.Trim(),
+                textBox2.Text,                    // ← Contraseña
+                comboBox1.SelectedItem.ToString(),
+                Cb_Semestre.SelectedItem.ToString(),
+                jornada
+            );
+
+            if (exito)
+            {
+                MessageBox.Show("¡Estudiante registrado con éxito!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Error al registrar. Puede que la cédula ya exista.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             // =================== TODO CORRECTO → REGISTRO EXITOSO ===================
             MessageBox.Show("¡Registro creado exitosamente!", "Éxito",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);

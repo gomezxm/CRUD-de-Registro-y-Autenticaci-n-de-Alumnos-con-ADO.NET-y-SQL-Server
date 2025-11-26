@@ -1,36 +1,24 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace CRUD
 {
     public partial class Viewer : Form
     {
+        private readonly EstudianteRepository _repo = new EstudianteRepository();
+
         public Viewer()
         {
             InitializeComponent();
             Lsb_Alumnos.SelectionMode = SelectionMode.One;
             this.StartPosition = FormStartPosition.CenterScreen;
-            // Necesario para que el formulario reciba las teclas aunque otros controles tengan el foco
             this.KeyPreview = true;
-            // Suscribimos el evento KeyDown
-            this.KeyDown += new KeyEventHandler(FormPrincipal_KeyDown);
-            // Ctrl + E para "Actualizar Datos"
+            this.KeyDown += FormPrincipal_KeyDown;
+
+            // Atajos de menú
             actualizarDatosToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.E;
-
-            // Opcional: que se vea el atajo en el menú (Ctrl+E)
             actualizarDatosToolStripMenuItem.ShowShortcutKeys = true;
-
-            // Ctrl + D para "Eliminar"
-            this.KeyPreview = true;                    // ← IMPORTANTE
-            this.KeyDown += new KeyEventHandler(FormPrincipal_KeyDown);
         }
 
         private void FormPrincipal_KeyDown(object sender, KeyEventArgs e)
@@ -39,11 +27,8 @@ namespace CRUD
             {
                 eliminarToolStripMenuItem.PerformClick();
                 e.Handled = true;
-                e.SuppressKeyPress = true; // evita el sonido "beep"
-                return; // salimos para no seguir evaluando
+                e.SuppressKeyPress = true;
             }
-
-            // ESC → Crear nuevo
             if (e.KeyCode == Keys.Escape)
             {
                 crearToolStripMenuItem.PerformClick();
@@ -52,106 +37,144 @@ namespace CRUD
             }
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void Viewer_Load(object sender, EventArgs e)
         {
-
+            CargarEstudiantes();
         }
 
-        private void pruebaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CargarEstudiantes()
         {
+            try
+            {
+                var lista = _repo.ObtenerTodos();
+                Lsb_Alumnos.Items.Clear();
+                foreach (var item in lista)
+                    Lsb_Alumnos.Items.Add(item);
 
+                if (Lsb_Alumnos.Items.Count > 0)
+                    Lsb_Alumnos.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar estudiantes: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void prueba2ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form1 formCrear = new Form1();
+            if (formCrear.ShowDialog() == DialogResult.OK)
+                CargarEstudiantes();
         }
 
-        private void Lb_Titulo_Click(object sender, EventArgs e)
+        private void actualizarDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (Lsb_Alumnos.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecciona un estudiante para actualizar.", "Seleccionar",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            string seleccionado = Lsb_Alumnos.SelectedItem.ToString();
+            int id = int.Parse(seleccionado.Split('-')[0].Trim());
+
+            VUptade formUpdate = new VUptade
+            {
+                IdEstudiante = id
+            };
+
+            if (formUpdate.ShowDialog() == DialogResult.OK)
+                CargarEstudiantes();
         }
 
-        private void crearToolStripMenuItem_Click(object sender, EventArgs e) // VENTANA PARA CREAR NUEVOS REGISTROS
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 VCrear = new Form1();
-            VCrear.ShowDialog();
+            if (Lsb_Alumnos.SelectedItem == null)
+            {
+                MessageBox.Show("Selecciona un estudiante para eliminar.", "Advertencia",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-        }
+            string seleccionado = Lsb_Alumnos.SelectedItem.ToString();
+            int id = int.Parse(seleccionado.Split('-')[0].Trim());
+            string nombre = seleccionado.Split('-')[1].Trim();
 
-        private void actualizarDatosToolStripMenuItem_Click(object sender, EventArgs e) // VENTANA PARA ACTUALIZAR REGISTROS
-        {
-            VUptade VActualizar = new VUptade();
-            VActualizar.ShowDialog();
+            DialogResult respuesta = MessageBox.Show(
+                $"¿Estás seguro de eliminar a:\n{nombre}?",
+                "Confirmar eliminación",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (respuesta == DialogResult.Yes)
+            {
+                try
+                {
+                    if (_repo.Eliminar(id))
+                    {
+                        MessageBox.Show("Estudiante eliminado correctamente.", "Éxito",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        CargarEstudiantes();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo eliminar el registro.", "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void cargarDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // AQUI SE DEBE ACTUALIZAR LA TABLA PARA VER LOS NUEVOS DATOS O VER DATOS (SE DEBE SELECCIONAR UN ESTUDIANTE)
-            MessageBox.Show("Datos cargados", "Carga de datos", MessageBoxButtons.OK, MessageBoxIcon.Information); // ESTE MENSAJE SE DEBE MOSTRAR DESPUES DE CARGAR LOS DATOS
-        }
-
-
-        /// PARA DANIEL, CUANDO SE VA A EJECUTAR UNA CRUD EL PROCESO ES: 1. SELECCIONA UN REGISTRO EN EL LISTBOX, 2. LUEGO TOCAR UN BOTON
-        /// NO PUEDE EJECUTAR UNA FUNCION SIN HABERLO SELECCIONADO
-        /// LAS VALIDACIONES PARA TODOS LOS CAMPOS DEPENDE LO QUE DIGA EL GAY DE MIGUEL PERO LA MAYORIA ES DE PURA LOGICA (QUE EL NOMBRE NO DEBE TENER SIMBOLOS EXTRAÑOS, SIN ESPACIOS EN BLANCO, ECT).
-        
-        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult respuesta = MessageBox.Show("¿Desea eliminar este registro?", "Eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); // ESTE CODIGO ES PARA ELIMINAR UN ALUMNO EN ESPECIFICO
-            if (respuesta == DialogResult.Yes)
-            {
-                // AQUI VA EL CODIGO PARA ELIMINAR EL REGISTRO !!!!!!!!SELECCIONADO!!!!!!!!
-                MessageBox.Show("Registro eliminado", "Eliminacion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); // ESTE MENSAJE SE DEBE MOSTRAR DESPUES DE ELIMINAR EL REGISTRO
-            }
+            CargarEstudiantes();
+            MessageBox.Show("Datos actualizados correctamente.", "Carga de datos",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Dispose(); // AQUI SE CIERRA EL PROGRAMA
-        }
-
-        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            
-            // CUANDO SE SELECCIONE UN ESTUDIANTE EN EL LISTBOX SE DEBE MOSTRAR EN LOS CAMPOS EN Viewer
-            // Si hay una columna en el ListBox, borrenla ya que solo es de referencia el formato de como debe verse el ListBoxs
-            
-            if (Lsb_Alumnos.SelectedItem != null)
-            {
-                string[] b = Lsb_Alumnos.SelectedItem.ToString().Split('-');
-                Txb_ID.Text = b[0].Trim();
-                Txb_Nombre.Text = b[1].Trim();
-                Txb_carrera.Text = b[2].Trim();
-                txb_jornada.Text = b[3].Trim();
-            }
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txb_Nombre_TextChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
 
         private void conectaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // ESTA PARTE ES PARA CONECTAR A LA BASE DE DATOS
-            MessageBox.Show("Conectando...","Conexion base de daos",MessageBoxButtons.OK);
+            try
+            {
+                using (var conn = new Microsoft.Data.SqlClient.SqlConnection(
+                    ConfigurationManager.ConnectionStrings["SqlServer"].ConnectionString))
+                {
+                    conn.Open();
+                    MessageBox.Show("¡Conexión exitosa a la base de datos!", "Conexión",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error de conexión:\n{ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Muestra datos del estudiante seleccionado en los TextBox (opcional)
+        private void Lsb_Alumnos_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (Lsb_Alumnos.SelectedItem == null) return;
+
+            string[] partes = Lsb_Alumnos.SelectedItem.ToString().Split('-');
+            if (partes.Length >= 4)
+            {
+                Txb_ID.Text = partes[0].Trim();
+                Txb_Nombre.Text = partes[1].Trim();
+                Txb_carrera.Text = partes[2].Trim();
+                txb_jornada.Text = partes[3].Trim();
+            }
         }
     }
 }

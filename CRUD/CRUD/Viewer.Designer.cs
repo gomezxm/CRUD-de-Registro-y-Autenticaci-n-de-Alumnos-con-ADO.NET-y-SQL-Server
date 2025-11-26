@@ -58,8 +58,7 @@
             Lsb_Alumnos.Location = new Point(12, 308);
             Lsb_Alumnos.Name = "Lsb_Alumnos";
             Lsb_Alumnos.Size = new Size(516, 144);
-            Lsb_Alumnos.TabIndex = 0;
-            Lsb_Alumnos.SelectedIndexChanged += listBox1_SelectedIndexChanged_1;
+            Lsb_Alumnos.TabIndex = 0;            
             // 
             // Jornada
             // 
@@ -96,7 +95,7 @@
             Txb_Nombre.Name = "Txb_Nombre";
             Txb_Nombre.Size = new Size(191, 27);
             Txb_Nombre.TabIndex = 23;
-            Txb_Nombre.TextChanged += Txb_Nombre_TextChanged;
+            
             // 
             // Txb_ID
             // 
@@ -125,7 +124,7 @@
             Lb_Titulo.Size = new Size(330, 38);
             Lb_Titulo.TabIndex = 37;
             Lb_Titulo.Text = "DATOS DE ESTUDIANTE";
-            Lb_Titulo.Click += Lb_Titulo_Click;
+            
             // 
             // menuStrip1
             // 
@@ -201,7 +200,6 @@
             txb_jornada.Name = "txb_jornada";
             txb_jornada.Size = new Size(191, 27);
             txb_jornada.TabIndex = 41;
-            txb_jornada.TextChanged += textBox4_TextChanged;
             // 
             // Lb_Jornada
             // 
