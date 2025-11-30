@@ -48,6 +48,7 @@
             txb_jornada = new TextBox();
             Lb_Jornada = new Label();
             label2 = new Label();
+            generarReporteToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -57,8 +58,8 @@
             Lsb_Alumnos.Items.AddRange(new object[] { "ID — Nombre — Carrera — Jornada", "01 - Gerardo Tejada - Desarrollo de software - Matutina" });
             Lsb_Alumnos.Location = new Point(12, 308);
             Lsb_Alumnos.Name = "Lsb_Alumnos";
-            Lsb_Alumnos.Size = new Size(516, 144);
-            Lsb_Alumnos.TabIndex = 0;            
+            Lsb_Alumnos.Size = new Size(633, 144);
+            Lsb_Alumnos.TabIndex = 0;
             // 
             // Jornada
             // 
@@ -82,7 +83,7 @@
             // 
             Lb_Nombre.AutoSize = true;
             Lb_Nombre.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_Nombre.Location = new Point(287, 102);
+            Lb_Nombre.Location = new Point(409, 102);
             Lb_Nombre.Name = "Lb_Nombre";
             Lb_Nombre.Size = new Size(74, 20);
             Lb_Nombre.TabIndex = 24;
@@ -91,16 +92,15 @@
             // Txb_Nombre
             // 
             Txb_Nombre.Enabled = false;
-            Txb_Nombre.Location = new Point(287, 125);
+            Txb_Nombre.Location = new Point(409, 125);
             Txb_Nombre.Name = "Txb_Nombre";
             Txb_Nombre.Size = new Size(191, 27);
             Txb_Nombre.TabIndex = 23;
-            
             // 
             // Txb_ID
             // 
             Txb_ID.Enabled = false;
-            Txb_ID.Location = new Point(64, 125);
+            Txb_ID.Location = new Point(65, 125);
             Txb_ID.Name = "Txb_ID";
             Txb_ID.Size = new Size(192, 27);
             Txb_ID.TabIndex = 22;
@@ -109,7 +109,7 @@
             // 
             Lb_ID.AutoSize = true;
             Lb_ID.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_ID.Location = new Point(64, 102);
+            Lb_ID.Location = new Point(65, 102);
             Lb_ID.Name = "Lb_ID";
             Lb_ID.Size = new Size(25, 20);
             Lb_ID.TabIndex = 21;
@@ -119,20 +119,19 @@
             // 
             Lb_Titulo.AutoSize = true;
             Lb_Titulo.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_Titulo.Location = new Point(82, 46);
+            Lb_Titulo.Location = new Point(176, 47);
             Lb_Titulo.Name = "Lb_Titulo";
             Lb_Titulo.Size = new Size(330, 38);
             Lb_Titulo.TabIndex = 37;
             Lb_Titulo.Text = "DATOS DE ESTUDIANTE";
-            
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { crearToolStripMenuItem, cargarDatosToolStripMenuItem, actualizarDatosToolStripMenuItem, eliminarToolStripMenuItem, salirToolStripMenuItem, opcionesToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { crearToolStripMenuItem, cargarDatosToolStripMenuItem, actualizarDatosToolStripMenuItem, eliminarToolStripMenuItem, salirToolStripMenuItem, generarReporteToolStripMenuItem, opcionesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(540, 28);
+            menuStrip1.Size = new Size(657, 28);
             menuStrip1.TabIndex = 38;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -177,11 +176,12 @@
             opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             opcionesToolStripMenuItem.Size = new Size(85, 24);
             opcionesToolStripMenuItem.Text = "Opciones";
+            opcionesToolStripMenuItem.Click += opcionesToolStripMenuItem_Click;
             // 
             // conectaToolStripMenuItem
             // 
             conectaToolStripMenuItem.Name = "conectaToolStripMenuItem";
-            conectaToolStripMenuItem.Size = new Size(146, 26);
+            conectaToolStripMenuItem.Size = new Size(224, 26);
             conectaToolStripMenuItem.Text = "Conecta";
             conectaToolStripMenuItem.Click += conectaToolStripMenuItem_Click;
             // 
@@ -196,7 +196,7 @@
             // txb_jornada
             // 
             txb_jornada.Enabled = false;
-            txb_jornada.Location = new Point(287, 199);
+            txb_jornada.Location = new Point(409, 199);
             txb_jornada.Name = "txb_jornada";
             txb_jornada.Size = new Size(191, 27);
             txb_jornada.TabIndex = 41;
@@ -205,7 +205,7 @@
             // 
             Lb_Jornada.AutoSize = true;
             Lb_Jornada.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Lb_Jornada.Location = new Point(287, 176);
+            Lb_Jornada.Location = new Point(409, 176);
             Lb_Jornada.Name = "Lb_Jornada";
             Lb_Jornada.Size = new Size(82, 20);
             Lb_Jornada.TabIndex = 42;
@@ -221,11 +221,17 @@
             label2.TabIndex = 43;
             label2.Text = "ALUMNO";
             // 
+            // generarReporteToolStripMenuItem
+            // 
+            generarReporteToolStripMenuItem.Name = "generarReporteToolStripMenuItem";
+            generarReporteToolStripMenuItem.Size = new Size(128, 24);
+            generarReporteToolStripMenuItem.Text = "Generar reporte";
+            // 
             // Viewer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(540, 466);
+            ClientSize = new Size(657, 466);
             Controls.Add(label2);
             Controls.Add(Lb_Jornada);
             Controls.Add(txb_jornada);
@@ -273,5 +279,6 @@
         private ToolStripMenuItem opcionesToolStripMenuItem;
         private ToolStripMenuItem conectaToolStripMenuItem;
         private Label label2;
+        private ToolStripMenuItem generarReporteToolStripMenuItem;
     }
 }

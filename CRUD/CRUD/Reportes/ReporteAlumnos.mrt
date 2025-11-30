@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Alumnos Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Alumnos</Alias>
+        <Columns isList="true" count="9">
+          <value>Id,System.Int32</value>
+          <value>Nombre,System.String</value>
+          <value>Cedula,System.String</value>
+          <value>Carrera,System.String</value>
+          <value>Semestre,System.String</value>
+          <value>Jornada,System.String</value>
+          <value>Usuario,System.String</value>
+          <value>Notificaciones,System.String</value>
+          <value>FechaRegistro,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <n>Alumnos</n>
+        <NameInSource>Data.Alumnos</NameInSource>
+      </Alumnos>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="1">
+      <value>Jornada,Jornada,System.String,Todas</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None,Black,1,Solid,False,4,Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageHeaderBand1 Ref="4" type="PageHeaderBand" isKey="true">
+          <Border>None,Black,1,Solid,False,4,Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,3.6</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="5" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>LightBlue</Brush>
+              <ClientRectangle>0,0,19,1.5</ClientRectangle>
+              <Font>Arial,18,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text1</n>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>REPORTE GENERAL DE ALUMNOS</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="6" type="Text" isKey="true">
+              <Border>None,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1.7,19,0.8</ClientRectangle>
+              <Font>Arial,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text2</n>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Fecha de generación: {Today.ToString("dd/MM/yyyy HH:mm")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text3 Ref="7" type="Text" isKey="true">
+              <Border>None,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.6,19,0.6</ClientRectangle>
+              <Font>Arial,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <n>Text3</n>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Jornada: {Jornada}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+          </Components>
+          <n>PageHeaderBand1</n>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageHeaderBand1>
+        <HeaderBand1 Ref="8" type="HeaderBand" isKey="true">
+          <Border>All,Black,1,Solid,False,4,Black</Border>
+          <Brush>LightGray</Brush>
+          <ClientRectangle>0,4.8,19,1</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text4 Ref="9" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text4</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>ID</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="10" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,0,3.5,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text5</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Nombre</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="11" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0,2,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text6</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Cédula</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="12" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.5,0,3.5,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text7</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Carrera</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="13" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,0,1.5,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text8</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Semestre</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="14" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.5,0,2,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text9</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Jornada</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="15" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.5,0,2.5,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text10</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Usuario</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="16" type="Text" isKey="true">
+              <Border>All,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,0,3,1</ClientRectangle>
+              <Font>Arial,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text11</n>
+              <Page isRef="3" />
+              <Parent isRef="8" />
+              <Text>Fecha Registro</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+          </Components>
+          <n>HeaderBand1</n>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </HeaderBand1>
+        <DataBand1 Ref="17" type="DataBand" isKey="true">
+          <Border>All,Gray,1,Solid,False,4,Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,6.6,19,0.8</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text12 Ref="18" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>2,2,2,2</Margins>
+              <n>Text12</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.Id}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="19" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1,0,3.5,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <Margins>2,2,2,2</Margins>
+              <n>Text13</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.Nombre}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="20" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.5,0,2,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>2,2,2,2</Margins>
+              <n>Text14</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.Cedula}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="21" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.5,0,3.5,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <Margins>2,2,2,2</Margins>
+              <n>Text15</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.Carrera}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text16 Ref="22" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,0,1.5,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>2,2,2,2</Margins>
+              <n>Text16</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.Semestre}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text17 Ref="23" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.5,0,2,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>2,2,2,2</Margins>
+              <n>Text17</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.Jornada}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text18 Ref="24" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.5,0,2.5,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <Margins>2,2,2,2</Margins>
+              <n>Text18</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.Usuario}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="25" type="Text" isKey="true">
+              <Border>All,Gray,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,0,3,0.8</ClientRectangle>
+              <Font>Arial,8</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>2,2,2,2</Margins>
+              <n>Text19</n>
+              <Page isRef="3" />
+              <Parent isRef="17" />
+              <Text>{Alumnos.FechaRegistro.ToString("dd/MM/yyyy HH:mm")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+          </Components>
+          <DataSourceName>Alumnos</DataSourceName>
+          <Filters isList="true" count="0" />
+          <n>DataBand1</n>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <PageFooterBand1 Ref="26" type="PageFooterBand" isKey="true">
+          <Border>None,Black,1,Solid,False,4,Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,8.2,19,1</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text20 Ref="27" type="Text" isKey="true">
+              <Border>Top,Black,1,Solid,False,4,Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,19,0.8</ClientRectangle>
+              <Font>Arial,9,Italic</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text20</n>
+              <Page isRef="3" />
+              <Parent isRef="26" />
+              <Text>Página {PageNumber} de {TotalPageCount} - Sistema de Gestión de Alumnos</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+          </Components>
+          <n>PageFooterBand1</n>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageFooterBand1>
+      </Components>
+      <Margins>1,1,2,2</Margins>
+      <n>Page1</n>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="28" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="29" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportGuid>a1234567890123456789012345678901</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

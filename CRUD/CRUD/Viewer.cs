@@ -176,5 +176,10 @@ namespace CRUD
                 txb_jornada.Text = partes[3].Trim();
             }
         }
+
+        private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

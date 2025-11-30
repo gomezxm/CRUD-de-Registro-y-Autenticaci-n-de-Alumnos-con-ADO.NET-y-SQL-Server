@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Alumno Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Alumno</Alias>
+        <Columns isList="true" count="10">
+          <value>Id,System.Int32</value>
+          <value>Nombre,System.String</value>
+          <value>Cedula,System.String</value>
+          <value>Carrera,System.String</value>
+          <value>Semestre,System.String</value>
+          <value>Jornada,System.String</value>
+          <value>Usuario,System.String</value>
+          <value>Notificaciones,System.String</value>
+          <value>FechaRegistro,System.DateTime</value>
+          <value>FechaRegistroFormato,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <n>Alumno</n>
+        <NameInSource>Alumno</NameInSource>
+      </Alumno>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="2">
+      <value>IdAlumno,IdAlumno,System.String,,False,False</value>
+      <value>FechaGeneracion,FechaGeneracion,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <ReportTitleBand1 Ref="4" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,1.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text1 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.2,19,0.8</ClientRectangle>
+              <ComponentStyle>Header1</ComponentStyle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,20,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text1</n>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>PERFIL DEL ALUMNO</Text>
+              <TextBrush>White</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14,1.3,5,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text2</n>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>Fecha: {FechaGeneracion}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <n>ReportTitleBand1</n>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </ReportTitleBand1>
+        <DataBand1 Ref="7" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,3,19,16</ClientRectangle>
+          <Components isList="true" count="23">
+            <Panel1 Ref="8" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Border>All;[68:101:144];2;Solid;False;4;Black</Border>
+              <Brush>[245:248:252]</Brush>
+              <ClientRectangle>2,0.5,15,15</ClientRectangle>
+              <Components isList="true" count="22">
+                <Text3 Ref="9" type="Text" isKey="true">
+                  <Brush>[68:101:144]</Brush>
+                  <ClientRectangle>0.5,0.5,14,0.7</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,14,Bold</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>5,5,5,5</Margins>
+                  <n>Text3</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>DATOS PERSONALES</Text>
+                  <TextBrush>White</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text3>
+                <Text4 Ref="10" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,1.5,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text4</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>ID:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text4>
+                <Text5 Ref="11" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4.5,1.5,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text5</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Id}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text5>
+                <Text6 Ref="12" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,2.3,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text6</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Nombre completo:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text6>
+                <Text7 Ref="13" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>4.5,2.3,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text7</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Nombre}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text7>
+                <Text8 Ref="14" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,3.1,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text8</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Cédula:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text8>
+                <Text9 Ref="15" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4.5,3.1,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text9</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Cedula}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text9>
+                <Text10 Ref="16" type="Text" isKey="true">
+                  <Brush>[68:101:144]</Brush>
+                  <ClientRectangle>0.5,4.3,14,0.7</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,14,Bold</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>5,5,5,5</Margins>
+                  <n>Text10</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>INFORMACIÓN ACADÉMICA</Text>
+                  <TextBrush>White</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text10>
+                <Text11 Ref="17" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,5.3,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text11</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Carrera:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text11>
+                <Text12 Ref="18" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <CanGrow>True</CanGrow>
+                  <ClientRectangle>4.5,5.3,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text12</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Carrera}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text12>
+                <Text13 Ref="19" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,6.1,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text13</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Semestre:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text13>
+                <Text14 Ref="20" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4.5,6.1,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text14</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Semestre}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text14>
+                <Text15 Ref="21" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,6.9,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text15</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Jornada:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text15>
+                <Text16 Ref="22" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4.5,6.9,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text16</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Jornada}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text16>
+                <Text17 Ref="23" type="Text" isKey="true">
+                  <Brush>[68:101:144]</Brush>
+                  <ClientRectangle>0.5,8.1,14,0.7</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,14,Bold</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <Margins>5,5,5,5</Margins>
+                  <n>Text17</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>INFORMACIÓN DE USUARIO</Text>
+                  <TextBrush>White</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text17>
+                <Text18 Ref="24" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,9.1,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text18</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Usuario:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text18>
+                <Text19 Ref="25" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4.5,9.1,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text19</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Usuario}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text19>
+                <Text20 Ref="26" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,9.9,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text20</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Recibe notificaciones:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text20>
+                <Text21 Ref="27" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4.5,9.9,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text21</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.Notificaciones}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text21>
+                <Text22 Ref="28" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>0.5,10.7,4,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10,Bold</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text22</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>Fecha de registro:</Text>
+                  <TextBrush>[68:101:144]</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text22>
+                <Text23 Ref="29" type="Text" isKey="true">
+                  <Border>Bottom;[200:200:200];1;Solid;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>4.5,10.7,10,0.6</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Arial,10</Font>
+                  <Margins>3,3,3,3</Margins>
+                  <n>Text23</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <Text>{Alumno.FechaRegistroFormato}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Text23>
+                <Shape1 Ref="30" type="Stimulsoft.Report.Components.StiRoundedRectangleShape" isKey="true">
+                  <Border>None;[68:101:144];1;Solid;False;4;Black</Border>
+                  <Brush>[68:101:144]</Brush>
+                  <ClientRectangle>0.5,12.3,14,1.5</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <n>Shape1</n>
+                  <Page isRef="3" />
+                  <Parent isRef="8" />
+                  <RoundRadius>10</RoundRadius>
+                </Shape1>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <n>Panel1</n>
+              <Page isRef="3" />
+              <Parent isRef="7" />
+            </Panel1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Alumno</DataSourceName>
+          <Filters isList="true" count="0" />
+          <n>DataBand1</n>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <PageFooterBand1 Ref="31" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,25.8,19,0.6</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text24 Ref="32" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,9,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <n>Text24</n>
+              <Page isRef="3" />
+              <Parent isRef="31" />
+              <Text>Generado el {FechaGeneracion}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="33" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,0.1,9,0.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <n>Text25</n>
+              <Page isRef="3" />
+              <Parent isRef="31" />
+              <Text>Página {PageNumber} de {TotalPageCount}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <n>PageFooterBand1</n>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageFooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>1a2b3c4d5e6f7a8b</Guid>
+      <Margins>1,1,1,1</Margins>
+      <n>Page1</n>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="34" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="35" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Perfil del Alumno</ReportAlias>
+  <ReportAuthor>Sistema de Gestión de Alumnos</ReportAuthor>
+  <ReportChanged>1/1/2025 12:00:00 AM</ReportChanged>
+  <ReportCreated>1/1/2025 12:00:00 AM</ReportCreated>
+  <ReportDescription>Ficha individual con información completa del alumno</ReportDescription>
+  <ReportFile>ReportePerfilAlumno.mrt</ReportFile>
+  <ReportGuid>c3d4e5f6a7b8c9d0</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2024.1.0.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <Header1 Ref="36" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <AllowUseBorderSides>False</AllowUseBorderSides>
+      <Brush>[68:101:144]</Brush>
+      <Font>Arial,20,Bold</Font>
+      <HorAlignment>Center</HorAlignment>
+      <n>Header1</n>
+      <StyleColors>
+        <BackColor>Transparent</BackColor>
+        <ForeColor>White</ForeColor>
+      </StyleColors>
+      <VertAlignment>Center</VertAlignment>
+    </Header1>
+  </Styles>
+</StiSerializer>

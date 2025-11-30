@@ -4,7 +4,13 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="VGenerarReportes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Viewer.cs">
@@ -13,5 +19,13 @@
     <Compile Update="VUptade.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Reportes\ReporteAlumnos.mrt">
+      <SubType>Form</SubType>
+    </None>
+    <None Update="Reportes\ReportePrueba.mrt">
+      <SubType>Form</SubType>
+    </None>
   </ItemGroup>
 </Project>
