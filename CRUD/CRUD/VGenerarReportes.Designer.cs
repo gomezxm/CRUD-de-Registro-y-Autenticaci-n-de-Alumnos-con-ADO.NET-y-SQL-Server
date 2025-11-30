@@ -45,7 +45,6 @@
             lsb_Estudiante = new ListBox();
             bt_AlumSelecionado = new Button();
             btnRefrescar = new Button();
-            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // Lb_TGR
@@ -208,20 +207,11 @@
             btnRefrescar.UseVisualStyleBackColor = true;
             btnRefrescar.Click += btnRefrescar_Click;
             // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(62, 430);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
-            dateTimePicker1.TabIndex = 59;
-            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
-            // 
             // VGenerarReportes
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(986, 646);
-            Controls.Add(dateTimePicker1);
+            ClientSize = new Size(716, 646);
             Controls.Add(btnRefrescar);
             Controls.Add(bt_AlumSelecionado);
             Controls.Add(lsb_Estudiante);
@@ -265,6 +255,5 @@
         private ListBox lsb_Estudiante;
         private Button bt_AlumSelecionado;
         private Button btnRefrescar;
-        private DateTimePicker dateTimePicker1;
     }
 }

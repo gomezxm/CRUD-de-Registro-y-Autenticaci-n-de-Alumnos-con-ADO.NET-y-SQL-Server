@@ -181,5 +181,11 @@ namespace CRUD
         {
 
         }
+
+        private void generarReporteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VGenerarReportes GREPORTES = new VGenerarReportes();
+            GREPORTES.ShowDialog();
+        }
     }
 }

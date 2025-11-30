@@ -42,13 +42,13 @@
             actualizarDatosToolStripMenuItem = new ToolStripMenuItem();
             eliminarToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
+            generarReporteToolStripMenuItem = new ToolStripMenuItem();
             opcionesToolStripMenuItem = new ToolStripMenuItem();
             conectaToolStripMenuItem = new ToolStripMenuItem();
             Txb_carrera = new TextBox();
             txb_jornada = new TextBox();
             Lb_Jornada = new Label();
             label2 = new Label();
-            generarReporteToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -170,6 +170,13 @@
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
+            // generarReporteToolStripMenuItem
+            // 
+            generarReporteToolStripMenuItem.Name = "generarReporteToolStripMenuItem";
+            generarReporteToolStripMenuItem.Size = new Size(128, 24);
+            generarReporteToolStripMenuItem.Text = "Generar reporte";
+            generarReporteToolStripMenuItem.Click += generarReporteToolStripMenuItem_Click;
+            // 
             // opcionesToolStripMenuItem
             // 
             opcionesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { conectaToolStripMenuItem });
@@ -181,7 +188,7 @@
             // conectaToolStripMenuItem
             // 
             conectaToolStripMenuItem.Name = "conectaToolStripMenuItem";
-            conectaToolStripMenuItem.Size = new Size(224, 26);
+            conectaToolStripMenuItem.Size = new Size(146, 26);
             conectaToolStripMenuItem.Text = "Conecta";
             conectaToolStripMenuItem.Click += conectaToolStripMenuItem_Click;
             // 
@@ -220,12 +227,6 @@
             label2.Size = new Size(76, 20);
             label2.TabIndex = 43;
             label2.Text = "ALUMNO";
-            // 
-            // generarReporteToolStripMenuItem
-            // 
-            generarReporteToolStripMenuItem.Name = "generarReporteToolStripMenuItem";
-            generarReporteToolStripMenuItem.Size = new Size(128, 24);
-            generarReporteToolStripMenuItem.Text = "Generar reporte";
             // 
             // Viewer
             // 

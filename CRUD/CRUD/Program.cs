@@ -12,7 +12,7 @@ namespace CRUD
             // see https://aka.ms/applicationconfiguration.
 
             ApplicationConfiguration.Initialize();
-            Application.Run(new Viewer());
+            Application.Run(new Login());
         }
     }
 }
